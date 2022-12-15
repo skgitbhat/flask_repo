@@ -1,0 +1,32 @@
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower|Overpass+Mono" rel="stylesheet">
+<link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='styles/custom.css') }}">
+<div id="wrapper">
+  <div class="main-content">
+    <div class="header">
+        <img src="{{url_for('static', filename = 'styles/ig-logo.png', width=100)}}" />
+    </div>
+
+    <form action="/reels" method="post">
+      <div class="l-part">
+        <input type="text" placeholder="Email or Username" class="input-1" name="username"/></br></br>
+        <div class="overlap-text">
+          <input type="password" placeholder="Password" class="input-2" name="password" /></br></br>
+          <a href="#">Forgot?</a>
+        </div>
+        <input type="submit" value="Log in" class="btn" />
+      </div>
+    </form></br></br>
+
+    <div class="s-part">
+      Don't have an account?<a href="#">Sign up</a></br></br>
+    </div>
+
+  </div>
+  <div class="sub-content">
+    
+    <p> &#169; Instagram 2022. All rights riserved.</p>
+  </div>
+</div>
+
+
+
